@@ -45,8 +45,10 @@ public class ContactUsPageTest extends BaseTest{
                 .clickContactUsLink()
                 .clickSubmitButton();
 
-        assertEquals(contactUsPage.getAlertDangerTitleText(), "There is 1 error", "Contact us Alert Danger Title text is incorrect");
-        assertEquals(contactUsPage.getAlertDangerText(), "Invalid email address.", "Contact us Alert Danger text is incorrect");
+        assertEquals(contactUsPage.getAlertDangerTitleText(), "There is 1 error",
+                "Contact us Alert Danger Title text is incorrect");
+        assertEquals(contactUsPage.getAlertDangerText(), "Invalid email address.",
+                "Contact us Alert Danger text is incorrect");
     }
 
     @Test

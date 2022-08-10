@@ -12,7 +12,6 @@ public class CartPage extends BasePage{
     @FindBy(xpath = "//*[@class = 'alert alert-warning']")
     private WebElement warningAlert;
 
-
     public CartPage(WebDriver driver) {
         super(driver);
     }
@@ -24,5 +23,4 @@ public class CartPage extends BasePage{
     public String getWarningAlertText() {
         return warningAlert.getText();
     }
-
 }

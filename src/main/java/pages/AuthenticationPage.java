@@ -81,5 +81,4 @@ public class AuthenticationPage extends BasePage{
     public String getAlertDangerText() {
         return alertDanger.getText();
     }
-
 }

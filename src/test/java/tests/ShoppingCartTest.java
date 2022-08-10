@@ -16,8 +16,7 @@ public class ShoppingCartTest extends BaseTest {
         CartPage cartPage = PageFactory.initElements(getDriver(), MainPage.class)
                 .clickShoppingCartLink();
 
-        assertEquals(cartPage.getWarningAlertText(), "Your shopping cart is empty.", "Warning Alert text is incorrect");
+        assertEquals(cartPage.getWarningAlertText(), "Your shopping cart is empty.",
+                "Warning Alert text is incorrect");
     }
-
-
 }

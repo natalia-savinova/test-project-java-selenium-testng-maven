@@ -17,6 +17,4 @@ public class MainPageFooterTest extends BaseTest {
 
         assertEquals(aboutUsPage.getAboutUsPageTitleText(), "ABOUT US", "About Us page title is incorrect");
     }
-
-
 }

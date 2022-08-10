@@ -16,6 +16,4 @@ public class MyAccountPage extends BasePage{
     public String getMyAccountPageTitleText() {
         return pageTitle.getText();
     }
-
-
 }

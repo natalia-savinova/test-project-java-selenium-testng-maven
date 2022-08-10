@@ -30,11 +30,9 @@ public class AuthenticationPageTest extends BaseTest {
 
         assertEquals(authenticationPage.getAlertDangerTitleText(), "There is 1 error",
                 "Authentication Alert Danger Title text is incorrect");
-        assertEquals(authenticationPage.getAlertDangerText(), "Authentication failed.", "Authentication Alert Danger text is incorrect");
+        assertEquals(authenticationPage.getAlertDangerText(), "Authentication failed.",
+                "Authentication Alert Danger text is incorrect");
     }
-
-
-
 
     @Test
     public void createAccountNegative() {
@@ -43,7 +41,8 @@ public class AuthenticationPageTest extends BaseTest {
                 .fillEmailCreateField(EMAIL_FOR_LOGIN_POSITIVE)
                 .clickSubmitButton();
 
-        assertEquals(authenticationPage.getCreateAccountErrorText(), "An account using this email address has already been registered. Please enter a valid password or request a new one.",
+        assertEquals(authenticationPage.getCreateAccountErrorText(),
+                "An account using this email address has already been registered. Please enter a valid password or request a new one.",
                 "Create account error text is incorrect");
     }
 }

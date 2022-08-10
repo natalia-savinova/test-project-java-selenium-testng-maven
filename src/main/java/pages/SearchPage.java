@@ -30,5 +30,4 @@ public class SearchPage extends BasePage{
     public String getSearchResultText() {
         return searchResult.getText();
     }
-
 }
