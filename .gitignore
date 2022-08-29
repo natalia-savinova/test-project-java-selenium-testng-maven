@@ -3,3 +3,4 @@ src/test/java/Base/TestData.java
 .idea
 *.class
 target/
+allure-results
