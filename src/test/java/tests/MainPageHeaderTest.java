@@ -1,13 +1,16 @@
 package tests;
 
 import base.BaseTest;
+import base.TestListener;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.*;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+@Listeners(TestListener.class)
 public class MainPageHeaderTest extends BaseTest {
 
     @Test

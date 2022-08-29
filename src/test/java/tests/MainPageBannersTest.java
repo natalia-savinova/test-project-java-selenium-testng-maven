@@ -1,10 +1,13 @@
 package tests;
 
 import base.BaseTest;
+import base.TestListener;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.MainPage;
 
+@Listeners(TestListener.class)
 public class MainPageBannersTest extends BaseTest {
 
     @Test

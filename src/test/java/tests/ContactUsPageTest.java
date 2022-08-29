@@ -1,12 +1,15 @@
 package tests;
 
 import base.BaseTest;
+import base.TestListener;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.ContactUsPage;
 import pages.MainPage;
 
 import static org.testng.Assert.assertEquals;
 
+@Listeners(TestListener.class)
 public class ContactUsPageTest extends BaseTest{
 
     @Test

@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest extends TestData{
 
-    private WebDriver driver;
+    protected static WebDriver driver;
 
     @BeforeClass
     public void beforeClass() {
@@ -27,6 +27,7 @@ public class BaseTest extends TestData{
 
     @AfterMethod
     public void after() {
+        driver.close();
         driver.quit();
     }
 
